@@ -1,6 +1,6 @@
 # Hubot docker image
 
-Lightweight alpine docker image that runs hubot 3.x+ with Slack.
+Lightweight alpine docker image that runs hubot 3.x+.
 
 ## Version specification
 
