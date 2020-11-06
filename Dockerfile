@@ -15,7 +15,7 @@ LABEL maintainer="i@kagurazakanyaa.com"
 # Install hubot dependencies
 RUN apk update\
  && apk upgrade\
- && apk add jq\
+ && apk add jq git\
  && npm install -g yo generator-hubot@next\
  && rm -rf /var/cache/apk/*
 
