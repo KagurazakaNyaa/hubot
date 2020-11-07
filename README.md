@@ -28,6 +28,9 @@ It will be removed at some point!
 The following environment variables should be provided if you want to use Hubot.
 
 * `HUBOT_ADAPTER` - Require bot adapter.
+  Defaults to `xmpp`.
+* `HUBOT_ADAPTER_PACKAGE` - Require bot adapter pakcage name.
+  Defaults to `hubot-xmpp`.
 * `HUBOT_NAME` - Optional bot name.
   Defaults to `robot`.
 * `HUBOT_OWNER` - Optional bot owner name.

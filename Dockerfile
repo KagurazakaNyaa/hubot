@@ -41,6 +41,9 @@ ARG HUBOT_VERSION="3.3.2"
 RUN jq --arg HUBOT_VERSION "$HUBOT_VERSION" '.dependencies.hubot = $HUBOT_VERSION' package.json > /tmp/package.json\
  && mv /tmp/package.json .
 
+ENV HUBOT_ADAPTER xmpp
+ENV HUBOT_ADAPTER_PACKAGE hubot-xmpp
+
 EXPOSE 80
 
 ENTRYPOINT ["./entrypoint.sh"]
