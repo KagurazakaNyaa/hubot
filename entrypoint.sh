@@ -1,8 +1,8 @@
 #!/bin/sh
 
 if [ -n "$EXTRA_PACKAGES" ]; then
-  printf "\\n********* Installing extra packages *********\\n"
-  npm install --save ${EXTRA_PACKAGES//,/ }
+  printf "\\n********* Using extra packages overwrite external-scripts.json *********\\n"
+  node -e "console.log(JSON.stringify('$EXTRA_PACKAGES'.split(',')))" > external-scripts.json
 fi
 
 printf "\\n********* Installing packages from external-scripts.json *********\\n"
