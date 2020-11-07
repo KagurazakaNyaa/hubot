@@ -44,5 +44,3 @@ RUN jq --arg HUBOT_VERSION "$HUBOT_VERSION" '.dependencies.hubot = $HUBOT_VERSIO
 EXPOSE 80
 
 ENTRYPOINT ["./entrypoint.sh"]
-
-CMD ["--name", "$HUBOT_NAME"]
